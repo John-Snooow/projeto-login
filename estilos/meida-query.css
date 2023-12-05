@@ -8,8 +8,8 @@
     section#login {
         width: 80vw;
     }
-    section#login > div#imgem { /*config. para imagem na verção tablet*/
-        float: left; /*as confg. float para mudar a posição da imagem não esta funcionando aqui  e nem nas demais a baixo*/
+    section#login > div#imagem { /*config. para imagem na verção tablet*/
+        float: left; 
         width: 30%;
         height: 100%;
     }
@@ -25,14 +25,21 @@
     section#login {
         width: 950px;
     }
-    section#ligin > div#imagem {
-        float: left;
+    section#login > div#imagem {
+        float: right;
         width: 50%; /*atela ficando em 50% elea vai ficar meio a meio*/
         height: 100%;
     }
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%; /*atela ficando em 50% elea vai ficar meio a meio*/
     }
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+    div#formulario > p { /*aqui eu coloquei esta config. para almentar a letra em relação as outras telas*/
+        font-size: 1.2em;
+    }
+    
     
 }
