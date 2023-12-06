@@ -32,7 +32,7 @@ section#login{ /*a "#" separando é porque trata-se de um "id" */
 
     background-color: white;
     width: 250px; /*para uma tamanho de tela de celular*/
-    height: 500px;
+    height: 510px;
     border-radius: 20px; /*para erradondar as bordas do main*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -57,4 +57,49 @@ h1{
 }
 div#formulario > p {
     font-size: 0.8em;
+}
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px; /*para as magens de cima e baixo ficar com 5px e as da direita e esquerda ficar com 0px*/
+}
+div.campo > label{
+    display: none; /*vai tirar as paravras login e senha e ficar só os icones*/
+}
+form > input[type=submit]{ /*esta sequancia de tag é para fazer a formatção do botão de entrar*/
+    display: block; /*para posicionar ele em uma linha só*/
+    font-size: 1em; /*para ele ficar no tanhanho padrão*/
+    width: 100%; /*para ele ficar no tamanho total da "div"*/
+    height: 40px; /*tamanho*/
+    background-color: #49a09d;
+    color: white;
+    border: none; /*para esconder a borda do botão que era preta*/
+    border-radius: 5px;
+    cursor: pointer; /*quando eu passar o mouse em cima do botão ele vai aparecer uma mãozinha no lugar da seta */
+}
+form > input[type=submit]:hover { /*esta sequancia de tag é para quando eu passar o mouse em cima do botão ele ter algumas alterações*/
+    background-color: #2d6361;
+}
+form > a.botao { /*as config do link para transfoma-lo em um botão*/
+    display: block; /*para destaca-lo*/
+    text-align: center; /*centralizar ele */
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px; /*para a frase ficar no meio do botão em relação vestical*/
+    margin-top: 5px; /*para dar uma espaço entre os dois botões*/
+    background-color: white; /*cor da caixa*/
+    color: #2d6361;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none; /*para tirar o traço que fica em baixo do link*/
+}
+form a.botao:hover{
+    background-color: #6cd3cf;
+}
+form > a.botao > span { /*para alterar o tamanho do incone ao lado da frase esquici a senha*/
+    font-size: 0.9em;
 }
