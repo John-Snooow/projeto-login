@@ -27,7 +27,6 @@ section#login{ /*a "#" separando é porque trata-se de um "id" */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*para que tudo que fique de fora da borda fique escondido*/
 
     background-color: white;
@@ -38,6 +37,7 @@ section#login{ /*a "#" separando é porque trata-se de um "id" */
 
     transition: width 0.3s, heigth 0.3s; /*para fazer uma trasição de "0.3s" quando for mudado de tela pequena para grades e Vice versa*/
     transition-timing-function: ease; /*para dar uma suavizada na animação*/
+    transform: translate(-50%, -50%); /*sempre que tiver alguma transição que ela seja a ultima confg. do bloco para que não dê algum tipo de problema futuro*/
 }
 section#login > div#imagem{
     /*aqui eu coloquei uma cor de fundo padrão que foi escolida anteriormente e puxei uma URL para trazer a imagem com "no-repeat" para não repetir*/
@@ -60,14 +60,36 @@ div#formulario > p {
 }
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px; /*para as magens de cima e baixo ficar com 5px e as da direita e esquerda ficar com 0px*/
 }
 div.campo > label{
     display: none; /*vai tirar as paravras login e senha e ficar só os icones*/
+}
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px); /*aqui em width fiz uma tag "calc" para calcular o tamanho da caixa de dentro do imput e encaichar na div campo*/
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px); /*para a cixa de dentro subir uma pouco e encaichar na div campo*/
+}
+div.campo > input:focus-within{ /*para ganhar foco quando eu estiver digitando no campos do input ficando na cor branca quando eu clicar no campo*/
+    background-color: white;
+
 }
 form > input[type=submit]{ /*esta sequancia de tag é para fazer a formatção do botão de entrar*/
     display: block; /*para posicionar ele em uma linha só*/

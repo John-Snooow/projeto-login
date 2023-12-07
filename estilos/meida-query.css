@@ -7,6 +7,7 @@
     }
     section#login {
         width: 80vw;
+        height: 300px;
     }
     section#login > div#imagem { /*config. para imagem na verção tablet*/
         float: left; 
@@ -24,6 +25,7 @@
     }
     section#login {
         width: 950px;
+        height: 350px;
     }
     section#login > div#imagem {
         float: right;
@@ -38,7 +40,8 @@
         font-size: 2em;
     }
     div#formulario > p { /*aqui eu coloquei esta config. para almentar a letra em relação as outras telas*/
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px; /*margem em cima e baixo de 20px e na direita e esquerda de 0px*/
     }
     
     
